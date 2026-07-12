@@ -1,0 +1,11 @@
+{
+  "name": "@castaminofen/observability",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "echo 'build observability'",
+    "lint": "echo 'lint observability'",
+    "test": "echo 'test observability'"
+  }
+}

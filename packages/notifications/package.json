@@ -1,0 +1,11 @@
+{
+  "name": "@castaminofen/notifications",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "echo 'build notifications'",
+    "lint": "echo 'lint notifications'",
+    "test": "echo 'test notifications'"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@castaminofen/config",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "echo 'build config'",
+    "lint": "echo 'lint config'",
+    "test": "echo 'test config'"
+  }
+}

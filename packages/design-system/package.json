@@ -1,0 +1,11 @@
+{
+  "name": "@castaminofen/design-system",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "echo 'build design-system'",
+    "lint": "echo 'lint design-system'",
+    "test": "echo 'test design-system'"
+  }
+}

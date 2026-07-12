@@ -1,0 +1,11 @@
+{
+  "name": "@castaminofen/admin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "echo 'build admin'",
+    "dev": "echo 'dev admin'",
+    "lint": "echo 'lint admin'",
+    "test": "echo 'test admin'"
+  }
+}

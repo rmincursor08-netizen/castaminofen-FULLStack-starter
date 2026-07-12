@@ -1,0 +1,11 @@
+{
+  "name": "@castaminofen/media",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "echo 'build media'",
+    "dev": "echo 'dev media'",
+    "lint": "echo 'lint media'",
+    "test": "echo 'test media'"
+  }
+}

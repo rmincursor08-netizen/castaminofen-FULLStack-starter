@@ -1,0 +1,11 @@
+{
+  "name": "@castaminofen/worker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "echo 'build worker'",
+    "dev": "echo 'dev worker'",
+    "lint": "echo 'lint worker'",
+    "test": "echo 'test worker'"
+  }
+}

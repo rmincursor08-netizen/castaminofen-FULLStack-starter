@@ -1,0 +1,11 @@
+{
+  "name": "@castaminofen/realtime",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "echo 'build realtime'",
+    "dev": "echo 'dev realtime'",
+    "lint": "echo 'lint realtime'",
+    "test": "echo 'test realtime'"
+  }
+}

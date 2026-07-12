@@ -1,0 +1,11 @@
+{
+  "name": "@castaminofen/feature-flags",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "echo 'build feature-flags'",
+    "lint": "echo 'lint feature-flags'",
+    "test": "echo 'test feature-flags'"
+  }
+}

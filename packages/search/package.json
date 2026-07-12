@@ -1,0 +1,11 @@
+{
+  "name": "@castaminofen/search",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "echo 'build search'",
+    "lint": "echo 'lint search'",
+    "test": "echo 'test search'"
+  }
+}

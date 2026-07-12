@@ -1,0 +1,11 @@
+{
+  "name": "@castaminofen/storage",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "echo 'build storage'",
+    "lint": "echo 'lint storage'",
+    "test": "echo 'test storage'"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@castaminofen/types",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "echo 'build types'",
+    "lint": "echo 'lint types'",
+    "test": "echo 'test types'"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@castaminofen/docs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "echo 'build docs'",
+    "dev": "echo 'dev docs'",
+    "lint": "echo 'lint docs'",
+    "test": "echo 'test docs'"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@castaminofen/database",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "echo 'build database'",
+    "lint": "echo 'lint database'",
+    "test": "echo 'test database'"
+  }
+}

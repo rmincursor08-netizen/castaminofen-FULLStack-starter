@@ -1,0 +1,3 @@
+# admin
+
+Administrative console.
