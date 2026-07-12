@@ -1,15 +1,11 @@
-# @castaminofen/search
+# search
 
-This package provides reusable functionality for the monorepo and should remain focused on a single responsibility.
+This package provides the shared search capability for the monorepo.
 
-## Purpose
-Search indexing and query helpers.
+## Scope
+- expose a minimal public contract
+- stay decoupled from app-specific business logic
+- provide extension points for future implementation
 
-## Usage guidance
-- Keep the public API small and well documented.
-- Prefer shared abstractions over app-specific logic.
-- Add tests for behavior changes and keep dependencies intentional.
-
-## Relationship to the repo
-- Apps consume this package when they need shared capabilities.
-- Other packages can depend on it when the concern is cross-cutting.
+## TODO
+- add domain-specific APIs and implementation details

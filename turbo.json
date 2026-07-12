@@ -16,5 +16,6 @@
       "cache": false,
       "persistent": true
     }
-  }
+  },
+  "globalDependencies": ["package.json", ".env"]
 }

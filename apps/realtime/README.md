@@ -1,11 +1,11 @@
 # realtime
 
-This app is part of the product delivery layer and should encapsulate its own runtime responsibilities.
+This app provides the realtime surface for the platform and is intentionally scaffolded with placeholders for future feature work.
 
-## Purpose
-Live communication and real-time event delivery.
+## Responsibilities
+- host the runtime entrypoint for the realtime experience
+- consume shared workspace packages
+- expose a minimal, production-ready structure for local development
 
-## Guidelines
-- Keep the app focused on its own domain and user experience.
-- Use shared packages for cross-cutting capabilities.
-- Document operational concerns and environment requirements.
+## TODO
+- add real routes, services, or UI modules as needed
