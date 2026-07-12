@@ -1,25 +1,15 @@
 # @castaminofen/auth
 
+This package provides reusable functionality for the monorepo and should remain focused on a single responsibility.
+
 ## Purpose
-Authentication, identity, session, and permission primitives.
+Authentication and identity-related primitives.
 
-## Responsibilities
-- sign-in, sign-out, token handling, and session lifecycle
-- role and permission evaluation interfaces
-- auth adapters for providers and local strategies
+## Usage guidance
+- Keep the public API small and well documented.
+- Prefer shared abstractions over app-specific logic.
+- Add tests for behavior changes and keep dependencies intentional.
 
-## Dependencies
-- packages/types
-- packages/config
-- packages/logger
-
-## Public API
-- AuthService
-- SessionManager
-- PermissionChecker
-- AuthProviderAdapter
-
-## Private API
-- token refresh internals
-- provider-specific adapters
-- session storage helpers
+## Relationship to the repo
+- Apps consume this package when they need shared capabilities.
+- Other packages can depend on it when the concern is cross-cutting.

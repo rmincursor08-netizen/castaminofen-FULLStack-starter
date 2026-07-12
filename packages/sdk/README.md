@@ -1,26 +1,15 @@
-# @castaminofen/sdk
+# sdk
+
+This package provides reusable functionality for the monorepo and should remain focused on a single responsibility.
 
 ## Purpose
-Client-facing integration surface for external and internal consumers.
+Public client SDK used by integrations and consumers.
 
-## Responsibilities
-- expose stable public client APIs
-- wrap lower-level packages in a consumer-friendly interface
-- provide typed integration entry points for apps and services
+## Usage guidance
+- Keep the public API small and well documented.
+- Prefer shared abstractions over app-specific logic.
+- Add tests for behavior changes and keep dependencies intentional.
 
-## Dependencies
-- packages/auth
-- packages/types
-- packages/config
-- packages/events
-
-## Public API
-- ContentClient
-- AuthClient
-- SearchClient
-- AnalyticsClient
-
-## Private API
-- internal transport adapters
-- internal request normalization helpers
-- internal auth refresh plumbing
+## Relationship to the repo
+- Apps consume this package when they need shared capabilities.
+- Other packages can depend on it when the concern is cross-cutting.

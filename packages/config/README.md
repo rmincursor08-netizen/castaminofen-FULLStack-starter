@@ -1,23 +1,15 @@
 # @castaminofen/config
 
+This package provides reusable functionality for the monorepo and should remain focused on a single responsibility.
+
 ## Purpose
-Shared environment and runtime configuration.
+Shared configuration management and environment helpers.
 
-## Responsibilities
-- config loading and validation
-- environment-aware defaults
-- feature flag and runtime settings primitives
+## Usage guidance
+- Keep the public API small and well documented.
+- Prefer shared abstractions over app-specific logic.
+- Add tests for behavior changes and keep dependencies intentional.
 
-## Dependencies
-- packages/types
-- packages/logger
-
-## Public API
-- loadConfig
-- getConfigValue
-- ConfigProvider
-
-## Private API
-- provider registration helpers
-- env normalization utilities
-- config schema internals
+## Relationship to the repo
+- Apps consume this package when they need shared capabilities.
+- Other packages can depend on it when the concern is cross-cutting.

@@ -1,24 +1,15 @@
 # @castaminofen/testing
 
+This package provides reusable functionality for the monorepo and should remain focused on a single responsibility.
+
 ## Purpose
-Shared testing utilities, fixtures, and helpers.
+Shared test utilities, fixtures, and helpers.
 
-## Responsibilities
-- test builders and factories
-- mock helpers and fixtures
-- e2e and integration test support
+## Usage guidance
+- Keep the public API small and well documented.
+- Prefer shared abstractions over app-specific logic.
+- Add tests for behavior changes and keep dependencies intentional.
 
-## Dependencies
-- packages/types
-- packages/utils
-
-## Public API
-- createTestUser
-- renderWithProviders
-- createMockRepository
-- testFactory
-
-## Private API
-- internal fixture builders
-- environment setup helpers
-- mock normalization internals
+## Relationship to the repo
+- Apps consume this package when they need shared capabilities.
+- Other packages can depend on it when the concern is cross-cutting.

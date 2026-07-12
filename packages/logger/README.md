@@ -1,24 +1,15 @@
-# @castaminofen/logger
+# logger
+
+This package provides reusable functionality for the monorepo and should remain focused on a single responsibility.
 
 ## Purpose
-Structured logging and diagnostics utilities.
+Structured logging and application diagnostics.
 
-## Responsibilities
-- standardized log creation
-- correlation and context enrichment
-- transport adapters for console, file, and observability backends
+## Usage guidance
+- Keep the public API small and well documented.
+- Prefer shared abstractions over app-specific logic.
+- Add tests for behavior changes and keep dependencies intentional.
 
-## Dependencies
-- packages/config
-- packages/types
-
-## Public API
-- Logger
-- createLogger
-- logError
-- logEvent
-
-## Private API
-- transport registration internals
-- formatter helpers
-- context enrichment logic
+## Relationship to the repo
+- Apps consume this package when they need shared capabilities.
+- Other packages can depend on it when the concern is cross-cutting.

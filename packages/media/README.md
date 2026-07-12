@@ -1,26 +1,15 @@
-# @castaminofen/media
+# media
+
+This package provides reusable functionality for the monorepo and should remain focused on a single responsibility.
 
 ## Purpose
-Media ingestion, transformation, and asset management utilities.
+Media domain abstractions and processing helpers.
 
-## Responsibilities
-- upload handling and media metadata
-- transcoding and packaging orchestration primitives
-- storage integration abstractions
+## Usage guidance
+- Keep the public API small and well documented.
+- Prefer shared abstractions over app-specific logic.
+- Add tests for behavior changes and keep dependencies intentional.
 
-## Dependencies
-- packages/types
-- packages/config
-- packages/logger
-- packages/events
-
-## Public API
-- MediaService
-- UploadClient
-- MediaMetadataMapper
-- AssetReference
-
-## Private API
-- transcoding job helpers
-- storage provider internals
-- temporary upload lifecycle helpers
+## Relationship to the repo
+- Apps consume this package when they need shared capabilities.
+- Other packages can depend on it when the concern is cross-cutting.

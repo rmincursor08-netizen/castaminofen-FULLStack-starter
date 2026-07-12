@@ -1,21 +1,27 @@
-# راهنمای توسعه‌دهنده
+# Developer Guide
 
-## 1. شروع کار
+This guide provides the day-to-day workflow for working in the monorepo.
 
-- نصب Docker و Docker Compose
-- راه‌اندازی PostgreSQL، Redis، MinIO، Elasticsearch
-- اجرای migrate و seed
-- اجرای اپ‌های api و web
+## Prerequisites
+- Node.js 20+
+- pnpm 9+
+- Docker for local services
 
-## 2. جریان کار روزمره
+## Common commands
+- Install dependencies: `pnpm install`
+- Start the workspace: `pnpm dev`
+- Build everything: `pnpm build`
+- Run tests: `pnpm test`
+- Lint the repo: `pnpm lint`
 
-- ساخت branch جدید
-- اجرای lint و test
-- اجرای build برای package‌های تغییر یافته
-- بازبینی dependency graph
+## Working conventions
+- Keep changes scoped to a single responsibility.
+- Prefer shared packages over duplicate implementations.
+- Add or update tests for behavior changes.
+- Update documentation when architecture or workflows change.
 
-## 3. نکات مهم
-
-- از ماژول‌های مشترک استفاده کنید
-- وابستگی‌های cross-module را از طریق contracts مدیریت کنید
-- از دسترسی مستقیم به infra در لایه‌های بالاتر خودداری کنید
+## Local development flow
+1. Create a branch for the work.
+2. Implement the change and keep the commit focused.
+3. Run relevant tests and linting.
+4. Open a pull request with a clear summary and validation steps.

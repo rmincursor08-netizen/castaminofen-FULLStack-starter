@@ -1,26 +1,15 @@
-# @castaminofen/player
+# player
+
+This package provides reusable functionality for the monorepo and should remain focused on a single responsibility.
 
 ## Purpose
-Reusable audio and video playback primitives.
+Media player components and playback integration.
 
-## Responsibilities
-- playback state management
-- stream source handling
-- player UI shell and event hooks
+## Usage guidance
+- Keep the public API small and well documented.
+- Prefer shared abstractions over app-specific logic.
+- Add tests for behavior changes and keep dependencies intentional.
 
-## Dependencies
-- packages/types
-- packages/media
-- packages/utils
-- packages/logger
-
-## Public API
-- PlayerComponent
-- PlaybackController
-- PlaybackState
-- PlayerEventBus
-
-## Private API
-- internal media source adapters
-- buffering and event normalization helpers
-- playback state reducers
+## Relationship to the repo
+- Apps consume this package when they need shared capabilities.
+- Other packages can depend on it when the concern is cross-cutting.

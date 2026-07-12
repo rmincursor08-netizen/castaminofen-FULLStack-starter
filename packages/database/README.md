@@ -1,25 +1,15 @@
 # @castaminofen/database
 
+This package provides reusable functionality for the monorepo and should remain focused on a single responsibility.
+
 ## Purpose
-Persistence, repository abstraction, and data access contracts.
+Database access, models, and persistence helpers.
 
-## Responsibilities
-- database client and schema access
-- repository interfaces and adapters
-- migration and persistence lifecycle support
+## Usage guidance
+- Keep the public API small and well documented.
+- Prefer shared abstractions over app-specific logic.
+- Add tests for behavior changes and keep dependencies intentional.
 
-## Dependencies
-- packages/types
-- packages/config
-- packages/logger
-
-## Public API
-- DatabaseClient
-- RepositoryFactory
-- TransactionManager
-- QueryBuilder
-
-## Private API
-- provider registration internals
-- connection pool adapters
-- migration runner helpers
+## Relationship to the repo
+- Apps consume this package when they need shared capabilities.
+- Other packages can depend on it when the concern is cross-cutting.

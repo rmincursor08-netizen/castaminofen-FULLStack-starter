@@ -1,17 +1,12 @@
 # Apps
 
-This folder contains all runtime applications for the monorepo.
+This directory contains the runtime-facing applications that deliver the product experience.
 
-## Purpose
-- hosts the user-facing web experience
-- hosts the admin experience
-- hosts the API, worker, media, and realtime services
-- keeps runtime entry points separate from reusable platform packages
-
-## What belongs here
-- app-specific source code
-- app-level configuration
-- app-specific documentation and startup instructions
-
-## Design rule
-Apps should depend on shared packages, not on each other directly.
+## Applications
+- admin: administration and moderation tooling
+- api: primary backend services and orchestration
+- docs: documentation and developer resources
+- media: media processing and streaming services
+- realtime: live communication features
+- web: end-user web experience
+- worker: background processing workflows

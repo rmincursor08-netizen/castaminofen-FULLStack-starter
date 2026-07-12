@@ -1,28 +1,15 @@
 # @castaminofen/ui
 
+This package provides reusable functionality for the monorepo and should remain focused on a single responsibility.
+
 ## Purpose
-Shared UI primitives for the platform.
+Shared UI primitives and presentation components.
 
-## Responsibilities
-- buttons, inputs, cards, modals, and layout primitives
-- accessible and theme-aware rendering
-- no domain-specific business logic
+## Usage guidance
+- Keep the public API small and well documented.
+- Prefer shared abstractions over app-specific logic.
+- Add tests for behavior changes and keep dependencies intentional.
 
-## Dependencies
-- packages/design-system
-- packages/types
-- packages/utils
-
-## Public API
-- Button
-- Input
-- Modal
-- Card
-- Stack
-- Grid
-- Typography
-
-## Private API
-- internal styling helpers
-- internal composition utilities
-- theme token adapters
+## Relationship to the repo
+- Apps consume this package when they need shared capabilities.
+- Other packages can depend on it when the concern is cross-cutting.

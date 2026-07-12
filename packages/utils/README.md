@@ -1,24 +1,15 @@
-# @castaminofen/utils
+# utils
+
+This package provides reusable functionality for the monorepo and should remain focused on a single responsibility.
 
 ## Purpose
-Common helper functions and small cross-cutting abstractions.
+General-purpose utility helpers used across packages.
 
-## Responsibilities
-- string, number, object, and date utilities
-- shared validation helpers
-- small reusable algorithms
+## Usage guidance
+- Keep the public API small and well documented.
+- Prefer shared abstractions over app-specific logic.
+- Add tests for behavior changes and keep dependencies intentional.
 
-## Dependencies
-- packages/types
-
-## Public API
-- isEmpty
-- debounce
-- formatDate
-- omitUndefined
-- deepMerge
-
-## Private API
-- internal normalization helpers
-- private utility adapters
-- internal formatting rules
+## Relationship to the repo
+- Apps consume this package when they need shared capabilities.
+- Other packages can depend on it when the concern is cross-cutting.

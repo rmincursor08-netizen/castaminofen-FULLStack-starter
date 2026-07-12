@@ -1,24 +1,15 @@
 # @castaminofen/design-system
 
+This package provides reusable functionality for the monorepo and should remain focused on a single responsibility.
+
 ## Purpose
-Visual language, tokens, and reusable UI patterns.
+Reusable UI building blocks and design tokens.
 
-## Responsibilities
-- color, spacing, typography, and motion tokens
-- shared theme definitions
-- component patterns for consistent branding
+## Usage guidance
+- Keep the public API small and well documented.
+- Prefer shared abstractions over app-specific logic.
+- Add tests for behavior changes and keep dependencies intentional.
 
-## Dependencies
-- packages/types
-- packages/utils
-
-## Public API
-- ThemeTokens
-- DesignSystemProvider
-- TypographyScale
-- SpacingScale
-
-## Private API
-- token generation internals
-- theme normalization helpers
-- style engine adapters
+## Relationship to the repo
+- Apps consume this package when they need shared capabilities.
+- Other packages can depend on it when the concern is cross-cutting.

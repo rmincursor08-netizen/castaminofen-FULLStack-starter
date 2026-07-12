@@ -1,24 +1,15 @@
 # @castaminofen/types
 
+This package provides reusable functionality for the monorepo and should remain focused on a single responsibility.
+
 ## Purpose
-Shared domain, API, and platform contracts.
+Shared TypeScript types and contracts.
 
-## Responsibilities
-- common interfaces and model types
-- DTO and API contract definitions
-- shared enums and constants
+## Usage guidance
+- Keep the public API small and well documented.
+- Prefer shared abstractions over app-specific logic.
+- Add tests for behavior changes and keep dependencies intentional.
 
-## Dependencies
-- none
-
-## Public API
-- User
-- ContentItem
-- Episode
-- Creator
-- ApiResponse
-- PaginationParams
-
-## Private API
-- internal contract helpers
-- schema-specific normalization types
+## Relationship to the repo
+- Apps consume this package when they need shared capabilities.
+- Other packages can depend on it when the concern is cross-cutting.

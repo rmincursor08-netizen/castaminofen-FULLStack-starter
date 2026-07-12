@@ -1,18 +1,14 @@
 # Castaminofen FullStack Starter
 
-This repository establishes a scalable, modular monolith foundation for a long-lived content platform. The structure is designed for future evolution into domain-based services without rewriting the core architecture.
+This monorepo provides a modular foundation for a content platform with multiple delivery surfaces, shared platform packages, and infrastructure-ready deployment paths.
 
-## Architecture principles
-
-- Modular boundaries with explicit contracts
-- Replaceable infrastructure adapters
-- Shared platform capabilities in packages
-- Runtime delivery in apps
-- Observability, security, and extensibility from day one
-
-## Repository layout
-
-- apps/: user-facing and runtime services
-- packages/: reusable platform capabilities
-- configs/: environment and deployment configuration
+## Main areas
+- apps/: runtime-facing applications
+- packages/: shared capabilities and abstractions
 - docs/: architecture and contributor guidance
+- infra/, docker/, k8s/: deployment and environment setup
+
+## Development workflow
+1. Install dependencies with `pnpm install`.
+2. Start local development with `pnpm dev`.
+3. Validate changes with `pnpm test` and `pnpm lint`.
