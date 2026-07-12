@@ -1,16 +1,9 @@
-# Infra
+# Infrastructure Design
 
-This folder contains infrastructure definitions and environment provisioning assets.
+This directory contains the infrastructure blueprint for the platform.
 
-## Purpose
-- stores infrastructure as code and provisioning logic
-- supports platform setup for development, staging, and production
-- keeps infrastructure concerns separated from application code
-
-## What belongs here
-- Terraform, Pulumi, or similar definitions
-- cloud resource templates
-- environment provisioning scripts
-
-## Design rule
-Infrastructure should be repeatable, documented, and safe to evolve.
+## Goals
+- standardize deployment and runtime patterns
+- support development, staging, and production environments
+- provide observability, storage, background jobs, and scaling guidance
+- keep infrastructure concerns separate from application code
